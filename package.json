@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/Sporego/Project-Spaceship#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "sequelize": "^5.7.5"
+    "sequelize": "^5.7.5",
+    "socket.io": "^2.2.0"
   }
 }
