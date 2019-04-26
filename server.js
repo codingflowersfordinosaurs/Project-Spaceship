@@ -1,3 +1,4 @@
+// including application routes and socket events, and set up of the application configuration
 // DEPENDENCIES
 const express = require("express");
 const http = require("http");
