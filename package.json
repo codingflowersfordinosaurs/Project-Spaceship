@@ -22,7 +22,11 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mysql2": "^1.6.5",
-    "sequelize": "^5.7.5",
+    "sequelize": "^5.7.6",
+    "sequelize-cli": "^5.4.0",
     "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
   }
 }

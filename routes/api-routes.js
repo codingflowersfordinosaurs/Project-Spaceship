@@ -4,12 +4,13 @@
 
 // Dependencies
 // =============================================================
-var Message = require("../models/message.js");
+var db = require("../models");
 
 // Routes
 // =============================================================
 module.exports = function(app) {
   app.get("/", function(req, res) {
+    db.messages.findAll().then(results => console.log("results: ", results));
     res.render("index");
   });
 };

@@ -31,3 +31,12 @@ app.listen(PORT, function() {
   // Log (server-side) when our server has started
   console.log(`Server listening on: http://localhost:${PORT}`);
 });
+
+/**
+ * Sequelize
+ *
+ * npx sequelize init - add sequelize magic to your project
+ * npx sequelize db:create - create database based on config/config.json
+ * npx sequelize model:generate --name <MODEL_NAME> --atributes attr1:string,attr2:text,attr3:<TYPE>
+ * npx sequelize db:migrate - going to create a new table based off of the model creatred from the previous command
+ */
