@@ -18,9 +18,13 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // require routes
-var routes = require("./controllers/spaceship_controller.js");
-app.use(routes);
-app.use("/", routes);
+// var routes = require("./controllers/spaceship_controller.js");
+// app.use(routes);
+// app.use("/", routes);
+
+// Routes
+// =============================================================
+require("./routes/api-routes.js")(app);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
