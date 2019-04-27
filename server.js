@@ -9,7 +9,7 @@ const socketEvents = require("./config/socket");
 const routes = require("./config/routes");
 const config = require("./config/config");
 
-class Server{
+class Server {
   constructor() {
     this.port = process.env.PORT || 3000;
     this.host = `localhost`;
@@ -20,9 +20,7 @@ class Server{
   }
 
   appConfig() {
-    this.app.use(
-      bodyParser.json()
-    );
+    this.app.use(bodyParser.json());
     new config(this.app);
   }
 
@@ -44,3 +42,16 @@ class Server{
 
 const app = new Server();
 app.appExecute();
+
+// Filbert Code Below
+
+// const express = require("express");
+// const app = express();
+// const port = process.env.PORT || 3000;
+// require("dotenv").config();
+// app.get("/", (req, res) => {
+//   res.send(process.env.SECRET_KEY);
+// });
+// app.listen(port, () => {
+//   console.log(`Server is running on port ${port}.`);
+// });
