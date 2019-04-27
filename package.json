@@ -1,26 +1,28 @@
 {
-  "name": "project-spaceship",
+  "name": "chat-test-2",
   "version": "1.0.0",
-  "description": "Columbia Project 2",
-  "main": "server.js",
+  "description": "chat test 2 with socket",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sporego/Project-Spaceship.git"
+    "url": "git+https://github.com/bingbingma/chat-test-2.git"
   },
-  "author": "Caitlyn, David, Filbert, Yasmine, Jay",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sporego/Project-Spaceship/issues"
+    "url": "https://github.com/bingbingma/chat-test-2/issues"
   },
-  "homepage": "https://github.com/Sporego/Project-Spaceship#readme",
+  "homepage": "https://github.com/bingbingma/chat-test-2#readme",
   "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "dotenv": "^7.0.0",
-    "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "passport": "^0.4.0",
     "sequelize": "^5.7.5",
