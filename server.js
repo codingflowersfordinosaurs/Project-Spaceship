@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var express = require("express");
 var app = express();
 
@@ -40,3 +41,15 @@ app.listen(PORT, function() {
  * npx sequelize model:generate --name <MODEL_NAME> --atributes attr1:string,attr2:text,attr3:<TYPE>
  * npx sequelize db:migrate - going to create a new table based off of the model creatred from the previous command
  */
+=======
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 3000;
+require("dotenv").config();
+app.get("/", (req, res) => {
+  res.send(process.env.SECRET_KEY);
+});
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}.`);
+});
+>>>>>>> master
